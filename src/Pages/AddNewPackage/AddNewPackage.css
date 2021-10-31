@@ -1,0 +1,17 @@
+.bg-image{
+    background-image: url(https://travel-time.cmsmasters.net/wp-content/uploads/2015/08/rtgst-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.add-package form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-package form input{
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 10px;
+}

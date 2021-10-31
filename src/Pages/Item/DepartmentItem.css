@@ -1,0 +1,15 @@
+.department-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+/* position: absolute;
+    z-index: 1;
+    display: block;
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    background-color: rgb(19 173 229 / 75%); */

@@ -1,23 +1,88 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AuthProvider from './Context/AuthProvider';
+import AboutUs from './Pages/AboutUs/AboutUs';
+import AddNewPackage from './Pages/AddNewPackage/AddNewPackage';
+import AllBooking from './Pages/AllBooking/AllBooking';
+import Departments from './Pages/Departments/Departments';
+import Destinations from './Pages/Doctors/Destinations';
+import Footer from './Pages/Footer/Footer';
+import Header from './Pages/Header/Header';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import MyBooking from './Pages/MyBooking/MyBooking';
+import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import Register from './Pages/Register/Register';
+import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
+import Services from './Pages/Services/Services';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <AuthProvider>
+        <BrowserRouter>
+
+          <Header></Header>
+          <Switch>
+
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+
+            <Route path="/aboutUs">
+              <AboutUs></AboutUs>
+            </Route>
+
+            <PrivateRoute exact path="/services">
+              <Services></Services>
+            </PrivateRoute>
+
+            <PrivateRoute path="/departments">
+              <Departments></Departments>
+            </PrivateRoute>
+
+            <PrivateRoute path="/destinations">
+              <Destinations></Destinations>
+            </PrivateRoute>
+
+            <PrivateRoute path="/myBooking">
+              <MyBooking></MyBooking>
+            </PrivateRoute>
+
+            <PrivateRoute path="/allBooking">
+              <AllBooking></AllBooking>
+            </PrivateRoute>
+
+            <PrivateRoute path="/addNewPackage">
+              <AddNewPackage></AddNewPackage>
+            </PrivateRoute>
+
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+
+            <PrivateRoute path="/services/:serviceId">
+              <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+
+          </Switch>
+          <Footer></Footer>
+
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

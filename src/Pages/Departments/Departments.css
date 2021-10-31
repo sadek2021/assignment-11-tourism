@@ -1,0 +1,22 @@
+.dept-banner{
+    position: relative;
+}
+.dept-banner::before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: url(https://smartdemowp.com/tripo/wp-content/uploads/2020/06/banner-1-1-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 0;
+    background-attachment: fixed;
+}
+.content{
+    position: relative;
+    padding: 200px 0;
+}

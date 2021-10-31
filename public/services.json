@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/the-grenadines-2.jpg",
+        "name": "The Grenadines",
+        "detail": "he Grenadines are islands in the Caribbean nations of St. Vincent and the Grenadines.",
+        "price": "$399"
+    },
+    {
+        "id": 2,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/barbados-2.jpg",
+        "name": "Barbados",
+        "detail": "Barbados is an eastern Caribbean island and an independent British Commonwealth nation.",
+        "price": "$599"
+    },
+    {
+        "id": 3,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/virgin-islands1-2.jpg",
+        "name": "Virgin Islands",
+        "detail": "The U.S. Virgin Islands are a group of Caribbean islands and islets. A U.S. territory.",
+        "price": "$300"
+    },
+    {
+        "id": 4,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/havana-2.jpg",
+        "name": "Republic of Cuba",
+        "detail": "As a fragile republic, in 1940 Cuba attempted to strengthen its democratic system.",
+        "price": "$499"
+    },
+    {
+        "id": 5,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/dominican-republic.jpg",
+        "name": "Dominican Republic",
+        "detail": "Dominican Republic is a Caribbean nation that shares island of Hispaniola.",
+        "price": "$699"
+    },
+    {
+        "id": 6,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/jamaica.jpg",
+        "name": "Jamaica",
+        "detail": "Jamaica, a Caribbean island nation, has a lush topography of mountains a beautiful place.",
+        "price": "$449"
+    },
+    {
+        "id": 7,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/guadeloupe.jpg",
+        "name": "Guadeloupe",
+        "detail": "Guadeloupe, a French overseas region, is an island group in the southern Caribbean Sea.",
+        "price": "$299"
+    },
+    {
+        "id": 8,
+        "img": "https://travel-time.cmsmasters.net/wp-content/uploads/2016/04/curacao.jpg",
+        "name": "Curacao",
+        "detail": "Curaçao, a Dutch Caribbean island, is known for its beaches tucked into coves expansive.",
+        "price": "$700"
+    }
+]
