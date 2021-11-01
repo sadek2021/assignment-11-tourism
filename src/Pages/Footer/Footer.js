@@ -9,7 +9,7 @@ const Footer = () => {
                 <img width="150" src={logo}className="mx-auto d-block" alt="" />
             </div>
             <div>
-                <p className="text-white text-center m-0">Copyright © 2021 All rights reserved City Medicare Clinic.</p>
+                <p className="text-white text-center m-0">Copyright © 2021 All rights reserved Travel Time.</p>
             </div>
         </div>
     );

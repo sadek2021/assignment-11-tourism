@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './../../Images/favicon/logo.png'
+// import logo from './../../Images/favicon/'
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth/useAuth';
 import './Header.css';
@@ -33,11 +34,6 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/departments">
-                                    News
-                                </Link>
-                            </li>
-                            <li className="nav-item">
                                 <Link className="nav-link" to="/destinations">
                                     Destinations
                                 </Link>
@@ -52,9 +48,9 @@ const Header = () => {
                                         <span className="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul className="dropdown-menu">
-                                        <Link className="dropdown-item" to="myBooking">My Booking</Link>
-                                        <Link className="dropdown-item" to="allBooking">All Booking</Link>
-                                        <Link className="dropdown-item" to="addNewPackage">Add New Booking</Link>
+                                        <Link className="dropdown-item" to="/myBooking">My Booking</Link>
+                                        <Link className="dropdown-item" to="/allBooking">All Booking</Link>
+                                        <Link className="dropdown-item" to="/addNewPackage">Add New Booking</Link>
                                     </ul>
                                 </div>
                                 {/* <h5 className="me-3 text-danger">{user.displayName}</h5> */}

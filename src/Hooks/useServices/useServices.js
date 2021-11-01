@@ -4,7 +4,7 @@ import { useState } from 'react';
 const useServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://whispering-tor-36819.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

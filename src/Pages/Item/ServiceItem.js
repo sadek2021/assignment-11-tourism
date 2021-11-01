@@ -4,7 +4,7 @@ import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const ServiceItem = (props) => {
-    const { id, img, name, detail, price } = props.service;
+    const { _id, img, name, detail, price } = props.service;
     return (
         <div>
             <Col className="shadow-lg">
@@ -16,10 +16,10 @@ const ServiceItem = (props) => {
                             <p>{detail}</p>
                         </div>
                         <div className="d-flex justify-content-between">
-                            <Link to={`/mybooking/${id}`}>
+                            <Link to={`/bookings/${_id}`}>
                                 <button type="button" className="btn btn-outline-danger btn-sm">Book Now</button>
                             </Link>
-                            <p className="fw-bold text-danger">{price}/<small>person</small> </p>
+                            <p className="fw-bold text-danger">{price}/<small>person</small></p>
                         </div>
                     </Card.Body>
 

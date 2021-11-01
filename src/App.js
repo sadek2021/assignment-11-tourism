@@ -4,8 +4,7 @@ import AuthProvider from './Context/AuthProvider';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import AddNewPackage from './Pages/AddNewPackage/AddNewPackage';
 import AllBooking from './Pages/AllBooking/AllBooking';
-import Departments from './Pages/Departments/Departments';
-import Destinations from './Pages/Doctors/Destinations';
+import Destinations from './Pages/Destinations/Destinations';
 import Footer from './Pages/Footer/Footer';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';
@@ -14,7 +13,8 @@ import MyBooking from './Pages/MyBooking/MyBooking';
 import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
-import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
+import DetailBooking from './Pages/DetailBooking/DetailBooking';
+// import DetailBooking from './Pages/DetailBooking/DetailBooking';
 import Services from './Pages/Services/Services';
 
 function App() {
@@ -42,10 +42,6 @@ function App() {
               <Services></Services>
             </PrivateRoute>
 
-            <PrivateRoute path="/departments">
-              <Departments></Departments>
-            </PrivateRoute>
-
             <PrivateRoute path="/destinations">
               <Destinations></Destinations>
             </PrivateRoute>
@@ -70,8 +66,8 @@ function App() {
               <Register></Register>
             </Route>
 
-            <PrivateRoute path="/services/:serviceId">
-              <ServiceDetail></ServiceDetail>
+            <PrivateRoute path="/bookings/:bookingId">
+              <DetailBooking></DetailBooking>
             </PrivateRoute>
 
             <Route path="*">
