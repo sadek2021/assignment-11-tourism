@@ -53,9 +53,8 @@ const AllBooking = () => {
 
     return (
         <div>
-            <div className="banner-booking banner-bs mb-5 text-center text-white">
-                <h1>MANAGE ALL <span className="text-color fw-bold">BOOKINGS</span></h1>
-                <h5>ONLY ADMIN CAN HANDEL THIS</h5>
+            <div className="banner-booking banner-bs mb-5 text-center">
+                <h1 className="text-danger fw-bold">All Booking Details</h1>
             </div>
             <div className="container">
                 <div className="container my-5">

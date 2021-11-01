@@ -32,14 +32,14 @@ const DetailBooking = () => {
     };
     return (
         <div className="">
-            <div className="align-items-center mx-auto">
-                <div className="container row my-5 mx-auto">
+            <div className="container align-items-center row my-5 mx-auto">
+                <h1 className="text-center text-danger mb-5">Details Booking</h1>
                     <div className="col-lg-6">
-                        <img className="w-60" src={bookingData?.img} alt="" />
-                        <h1 className=" fw-bold text-color">{bookingData?.name}</h1>
-                        <h4>{bookingData?.detail}</h4>
+                        <img className="w-100" src={bookingData?.img} alt="" />
+                        <h1 className=" fw-bold text-danger">{bookingData?.name}</h1>
+                        <h5>{bookingData?.detail}</h5>
                     </div>
-                    <div className="col-lg-6 text-center">
+                    <div className="col-lg-6 text-center mt-5">
                         <h2 className="text-danger">Fillup The Form & Confirm Booking Of This Package</h2>
                         <form className="booking-form" onSubmit={handleSubmit(onSubmit)}>
 
@@ -53,8 +53,6 @@ const DetailBooking = () => {
                         </form>
                     </div>
                 </div>
-            </div>
-
         </div>
     );
 };

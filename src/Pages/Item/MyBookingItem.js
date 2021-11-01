@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
+
 const MyBookingItem = (props) => {
     const { img, name, price } = props.booking.package;
     const { _id, email, address, phone, status } = props.booking;
@@ -17,11 +18,10 @@ const MyBookingItem = (props) => {
                             <h6>Address: {address}</h6>
                             <h6>Contact: {phone}</h6>
                             <h6>Status: <span className="text-danger">{status}</span></h6>
-                            <h4><span>{price}/<small>Person</small> </span></h4>
                         </div>
                         <div className="d-flex justify-content-between align-items-center">
-                            <button onClick={() => props.handleDeletePackage(_id)} type="button" className="btn btn-outline-primary btn-sm">Cancel</button>
-                            <h4><span className="text-color">${price}</span>/Person</h4>
+                            <button onClick={() => props.handleDeletePackage(_id)} type="button" className="btn btn-outline-danger btn-sm">Cancel</button>
+                            <h4 className="text-danger">{price}/ <small>Person</small> </h4>
                         </div>
                     </Card.Body>
                 </Card>

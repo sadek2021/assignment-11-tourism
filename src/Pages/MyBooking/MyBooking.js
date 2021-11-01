@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 import useAuth from '../../Hooks/useAuth/useAuth';
 import MyBookingItem from '../Item/MyBookingItem';
+import './MyBooking.css'
 
 const MyBooking = () =>{
     const [bookings, setBookings] = useState([]);
@@ -38,9 +39,9 @@ const MyBooking = () =>{
     };
     return (
         <div>
-            <div className="booking-banner banner-bs mb-5 text-center text-white">
-                <h1>MY <span className="text-color fw-bold">BOOKINGS</span></h1>
-                <h5>YOU CAN SEE DETAILS INFORMATION</h5>
+            <div className="booking-banner banner-bs mb-5 text-center">
+                <h1 className="my-title text-danger fw-bold">My Bookings</h1>
+                <h5 className="text-white">Check your Booking Details</h5>
             </div>
             <div className="container">
                 <div className="container my-5">

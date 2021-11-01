@@ -51,7 +51,7 @@ const Login = () => {
             .finally(() => setIsLoading(false));
     }
     return (
-        <div className="container mx-auto align-items-center g-4 mt-5">
+        <div className="container login-box mx-auto align-items-center g-4 ">
             <div className="w-50 mx-auto">
                 <h1 className="text-center text-danger">Login Account</h1>
 
@@ -91,10 +91,10 @@ const Login = () => {
                 </form>
                 <div className="text-center mt-2">
                     <h6>Or</h6>
-                    <h6>Continue With</h6>
+                    {/* <h6>Continue With</h6> */}
                     {/* On Click */}
-                    <button onClick={handleGoogleLogin} className="btn">
-                        <img width="40px" src={icon1} alt="" />
+                    <button onClick={handleGoogleLogin} className="btn btn-outline-danger">
+                        <img width="40px" src={icon1} alt="" /> Continue with Google
                     </button>
                 </div>
             </div>
