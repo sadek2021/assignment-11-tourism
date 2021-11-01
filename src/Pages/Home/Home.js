@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Carousel, Row } from 'react-bootstrap';
 import useServices from '../../Hooks/useServices/useServices';
 import ServiceItem from '../Item/ServiceItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,12 +21,42 @@ const Home = () => {
 
     return (
         <div>
-            <div className="mb-5 banner">
-                <div className="content text-center">
-                    <h4 className="text-white">WELCOME TO TRAVEL TIME</h4>
-                    <h1 className="home-title fw-bold text-danger">TRAVEL TO YOUR BEAUTIFUL PLACES</h1>
-                    <h2 className="text-white">The Group travel specialists in Music, Sport and Education tours. </h2>
-                </div>
+            <div className="mb-5">
+                <Carousel>
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src="https://getaway.qodeinteractive.com/wp-content/uploads/2017/08/main-slider-3.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption className="fw-bold">
+                            <h1>WELCOME TO TRAVEL TIME</h1>
+                            <p>Start Your Enjoyable Travel</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src="https://getaway.qodeinteractive.com/wp-content/uploads/2017/08/main-slider-2.jpg"
+                            alt="Second slide"
+                        />
+                        <Carousel.Caption className="fw-bold">
+                            <h1>TRAVEL TO YOUR BEAUTIFUL PLACES</h1>
+                            <p>Start Booking Your Favourite Package</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item interval={2000}>
+                        <img
+                            className="d-block w-100"
+                            src="https://getaway.qodeinteractive.com/wp-content/uploads/2017/08/main-slider-1.jpg"
+                            alt="Third slide"
+                        />
+                        <Carousel.Caption className="fw-bold">
+                            <h1>Plan Your Trip with Travel Time</h1>
+                            <p>Get Enjoy with Memorable Moment</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
             </div>
             <div className="container">
                 <div className="my-5 text-center">
@@ -47,29 +77,7 @@ const Home = () => {
                 <div className="row row-cols-1 row-cols-lg-2 mx-auto">
                     <div className="tour-plan col text-lg-end  front-icon">
                         <img className="img-fluid" width="600" src={aboutImg} alt="" />
-                        {/* <h3 className="mt-1 text-center">Free Consultation</h3>
-                        <p className="text-center">The popular app allows users to ask its team of 35,000 active, U.S.-licensed destinations health-related for free.</p> */}
                     </div>
-                    {/* <div className="col front-icon">
-                        <span className="d-flex justify-content-center">{blood}</span>
-                        <h3 className="mt-1 text-center">Qualified Nurses</h3>
-                        <p className="text-center">Nurses comprise the largest component of most healthcare environments; but there is evidence of international shortages of qualified nurses.</p>
-                    </div>
-                    <div className="col text-lg-end front-icon">
-                        <span className="d-flex justify-content-center">{Ambulance}</span>
-                        <h3 className="mt-1 text-center">Professional Expert Destinations</h3>
-                        <p className="text-center">Specialists are destinations who have advanced training and degrees in a particular branch of medicine, such as heart health or bone health. Depending on the field, many can also perform surgery.</p>
-                    </div>
-                    <div className="col front-icon">
-                        <span className="d-flex justify-content-center">{NotesMedical}</span>
-                        <h3 className="mt-1 text-center">Affordable Price</h3>
-                        <p>Just as there are challenges to making health care more affordable, there are many opportunities to reduce costs without compromising care.</p>
-                    </div>
-                    <div className="col text-lg-end front-icon">
-                        <span className="d-flex justify-content-center">{Heart}</span>
-                        <h3 className="mt-1 text-center">24/7 Opened</h3>
-                        <p className="text-center">24X7 emergency services with 24 Hour emergency destinations available. Our 24 hour open emergency hospital near you is always ready.</p>
-                    </div> */}
                     <div className="col front-icon">
                         <h2 className="mt-5 text-danger">Let's Get Started To Go Your Dream Places</h2>
                         <p className="mt-3">There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly.</p>

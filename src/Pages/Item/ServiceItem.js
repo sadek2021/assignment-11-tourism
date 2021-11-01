@@ -8,7 +8,7 @@ const ServiceItem = (props) => {
     return (
         <div>
             <Col className="shadow-lg">
-                <Card className="hover-card">
+                <Card>
                     <Card.Img variant="top" src={img} />
                     <Card.Body>
                         <Card.Title className="text-danger fw-bold">{name}</Card.Title>
