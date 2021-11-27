@@ -2,12 +2,13 @@
 
 Our Live Website. [Travel Time](https://city-medicare-clinic.web.app/).
 
-### => The Group travel specialists in Music, Sport and Education tours.
+### => Created a dashboard to control the admin panel. Here the admin can add a new package, delete a package etc.
 
-### => Enjoy our Cheap Holiday packages and create your own most memorable moment and a trip to remember with Travel Time with your loved ones.
+### => When the user clicked on the book now button the details booking page will display detailed information of the item.
 
-### => There are many variations of passages of available but the majority have suffered alteration in some form, by injected hum randomised words which don't look even slightly.
+### => On my booking page, the logged in user can see only his/her orders. If the user wants, he/she can cancel/delete any order.
 
-### => Travel Time is a World Leading Online Tour Booking Platform
+### => Used private route and redirect option so, users must login or register to view and book the package.
 
-### * Travelers are always discoverers, especially those who travel by air. There are no signposts in the sky to show a man has passed that way before. There are no channels marked. The flier breaks each second into new uncharted seas.
+### => A confirmation message will show before deleting or canceling an item.
+
